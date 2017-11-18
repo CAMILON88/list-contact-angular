@@ -1,0 +1,39 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<div class="row">
+				<h1>Agregar Contacto</h1>
+			</div>
+			
+			<div class="row">
+				<form name="form" ng-submit="form.$valid && saveContact(contact)" novalidate>
+					<div class="form-group" ng-class="{true: 'error'}[submitted && form.nameField.$invalid]">
+						<label for="nameField">Nombre</label>
+						<input type="text" id="nameField" name="nameField" class="form-control" ng-model="contact.name" required>
+						<span class="error" ng-show="submitted && form.nameField.$error.required">Required field!</span><br>
+					</div>
+					<div class="form-group" ng-class="{true: 'error'}[submitted && form.emailField.$invalid]">
+						<label for="emailField">Email</label>
+						<input type="email" class="form-control" id="emailField" name="emailField" ng-model="contact.email" required>
+						<span class="error" ng-show="submitted && form.emailField.$error.required">Required field!</span><br>
+					</div>
+					<div class="form-group" ng-class="{true: 'error'}[submitted && form.phoneField.$invalid]">
+						<label for="phoneField">Telefono</label>
+						<input type="number" class="form-control" id="phoneField" name="phoneField" ng-model="contact.phone" required>
+						<span class="error" ng-show="submitted && form.phoneField.$error.required">Required field!</span><br>
+					</div>
+					<div class="form-group">
+						<label for="notesField">Notas</label>
+						<textarea class="form-control" rows="3" id="notesField" ng-model="contact.notes"></textarea>
+					</div>
+					<div class="form-group">
+						<div class="text-right">
+							<a href="#/" class="btn btn-default">Regresar</a>
+							<button type="submit" class="btn btn-main" ng-click="submitted=true">Guardar</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>	
