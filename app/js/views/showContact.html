@@ -1,0 +1,31 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<h1>{{ contact.name }}</h1>
+			<hr>
+			<div class="row">
+				<div class="col-sm-6">
+					<span class="contact-detail"><span class="glyphicon glyphicon-envelope"></span> {{ contact.email }}</span>			
+				</div>
+				<div class="col-sm-6 text-right">
+					<span class="contact-detail"><span class="glyphicon glyphicon-phone"></span> {{ contact.phone }}</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-12">
+					<strong>NOTES:</strong>
+					<div class="notes">{{ contact.notes }}</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6">
+					<a href="#/" class="theme-color">Regresar</a>			
+				</div>
+				<div class="col-sm-6 text-right">
+					<span class="contact-buttons"><a href="#/contact/edit/{{contact.$id}}" class="theme-color"><span class="glyphicon glyphicon-edit"></span> Editar</a></span>
+					<span class="contact-buttons"><a href="#" class="theme-color" ng-click="deleteContact(contact.$id, $event)"><span class="glyphicon glyphicon-trash"></span> Eliminar</a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	

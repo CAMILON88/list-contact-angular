@@ -1,0 +1,25 @@
+<div class="container">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<div class="row">
+				<div class="col-sm-8">
+					<h1>Lista De Contactos</h1>
+				</div>
+				<div class="col-sm-4">
+					<a href="#/contact/new" id="addContact" class="add-contact theme-color text-right"><h4><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Nuevo Contacto</h4>
+					</a>
+				</div>
+			</div>
+
+			<div class="list-group">
+				<a href="#/contact/{{contact.$id}}" class="list-group-item" ng-repeat="(key, contact) in contacts">
+					<h3 class="theme-color list-group-item-heading">{{ contact.name }}</h3>
+					<p class="list-group-item-text">
+						<span class="contact-detail"><span class="glyphicon glyphicon-envelope"></span> {{ contact.email }}</span>
+						<span class="contact-detail"><span class="glyphicon glyphicon-phone"></span> {{ contact.phone }}</span>
+					</p>
+				</a>
+			</div>
+		</div>		
+	</div>
+</div>

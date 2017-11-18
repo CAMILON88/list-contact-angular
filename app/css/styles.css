@@ -1,0 +1,45 @@
+.container{
+	padding: 5%;
+}
+.row{
+    margin-bottom: 30px;
+}
+a.list-group-item .list-group-item-heading, .theme-color, a.theme-color:hover{
+	color:#00BCD4;
+}
+.contact-detail,.contact-buttons{
+	margin-right: 20px;
+}
+.contact-detail:last-child, .contact-buttons:last-child {
+    margin: 0;
+}
+.ng-invalid.ng-touched {
+  border: 1px solid #ff0000;
+}
+.error{
+	color:#b94a48;
+}
+.error input{
+	border-color:#b94a48;
+}
+a.list-group-item:hover{
+    background-color: #00BCD4;
+    color:#f5f5f5;
+}
+a.list-group-item:hover .theme-color{
+    color:#f5f5f5;
+}
+hr{
+	border-color: #00BCD4;
+	margin-bottom: 40px;
+}
+.btn-main {
+    color: white;
+    background-color: #00BCD4;
+    border-color: #00BCD4;
+}
+.btn-main:hover {
+    color: white;
+    background-color: #26C6DA;
+    border-color: #26C6DA;
+}
