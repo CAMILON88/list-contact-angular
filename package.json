@@ -2,9 +2,9 @@
     "name": "listcontact-angular",
     "private": true,
     "version": "0.0.0",
-    "homepage": "https://camilon88.github.io/listcontact-angular/",
+    "homepage": "https://camilon88.github.io/contact-angular/",
     "description": "A starter project for AngularJS",
-    "repository": "https://github.com/CAMILON88/listcontact-angular",
+    "repository": "https://github.com/CAMILON88/contact-angular",
     "license": "MIT",
     "devDependencies": {
         "bower": "^1.7.7",
