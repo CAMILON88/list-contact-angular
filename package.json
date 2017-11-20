@@ -3,7 +3,7 @@
     "private": true,
     "version": "0.0.0",
     "description": "A starter project for AngularJS",
-    "repository": "https://github.com/CAMILON88/listcontact-angular",
+    "repository": "https://github.com/CAMILON88/list-contact-angular",
     "license": "MIT",
     "devDependencies": {
         "bower": "^1.7.7",
